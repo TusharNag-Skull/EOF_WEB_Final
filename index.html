@@ -52,14 +52,16 @@
     </nav>
 
     <!-- Hero Section -->
+
     <section class="hero-section" id="home">
         <!-- Hero Content -->
         <div class="hero-content">
-            <h1 class="hero-title animated-title">
-                <span class="title-line">Stories that Feel</span><br>
-                <span class="title-line">Frames that stay</span><br>
-                <span class="title-line">To Create the Difference</span>
-            </h1>
+           <h1 class="hero-title animated-title">
+  <span class="title-line">Stories that Feel</span><br>
+  <span class="title-line">Frames that stay</span><br>
+  <span class="title-line">To Create the Difference</span>
+</h1>
+
         </div>
         
         <!-- Floating Elements -->
@@ -275,7 +277,43 @@
             </div>
         </div>
     </section>
+<style>
+/* Default: Desktop view */
+.about-content {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
 
+.about-description {
+    flex: 2;
+}
+
+.about-right {
+    flex: 1;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+
+    /* Move the founder image before the description */
+    .about-right {
+        order: -1;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+
+    .about-right img {
+        max-width: 250px;
+        width: 100%;
+        border-radius: 15px;
+    }
+}
+
+</style>
     <!-- About Section -->
     <section class="about-section" id="about">
         <div class="container">
