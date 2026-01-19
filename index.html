@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evenly Odd Films - Stories that feel. Frames that stay.</title>
-    <meta name="description" content="Evenly Odd Films creates cinematic experiences that resonate. From feature films to commercials, we craft stories that feel and frames that stay.">
-    
+    <meta name="description"
+        content="Evenly Odd Films creates cinematic experiences that resonate. From feature films to commercials, we craft stories that feel and frames that stay.">
+
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    
+
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
+
     <!-- Custom Styles -->
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <!-- Animated Background -->
     <div class="animated-bg">
@@ -33,7 +37,7 @@
                 <img src="Logo/eof3.png" alt="Evenly Odd Films" class="logo-img">
                 <span class="logo-text">Evenly Odd Films</span>
             </div>
-            
+
             <ul class="nav-menu" id="nav-menu">
                 <li><a href="#home" class="nav-link active">Home</a></li>
                 <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
@@ -41,8 +45,8 @@
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            
-            
+
+
             <div class="hamburger" id="hamburger">
                 <span></span>
                 <span></span>
@@ -51,70 +55,107 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <section class="hero-slider" id="home">
 
-    <section class="hero-section" id="home">
-        <!-- Hero Content -->
-        <div class="hero-content">
-           <h1 class="hero-title animated-title">
-  <span class="title-line">Stories that Feel</span><br>
-  <span class="title-line">Frames that stay</span><br>
-  <span class="title-line">To Create the Difference</span>
-</h1>
+        <!-- Slide 1 : Poster -->
+        <div class="hero-slide active">
+    <img src="dp1.jpeg" class="hero-poster" alt="EOF Banner">
+</div>
+
+
+        <!-- Slide 2 : Your Existing Hero -->
+        <div class="hero-slide">
+
+            <!-- YOUR HERO SECTION START -->
+       <div class="hero-section hero-section-inner">
+
+                <!-- Hero Content -->
+                <div class="hero-content">
+                    <h1 class="hero-title animated-title">
+                        <span class="title-line">Stories that Feel</span><br>
+                        <span class="title-line">Frames that stay</span><br>
+                        <span class="title-line">To Create the Difference</span>
+                    </h1>
+                </div>
+
+                <!-- Floating Elements -->
+                <div class="hero-floating-elements">
+                    <div class="floating-element element-1"><i class="fas fa-video"></i></div>
+                    <div class="floating-element element-2"><i class="fas fa-camera"></i></div>
+                    <div class="floating-element element-3"><i class="fas fa-film"></i></div>
+                    <div class="floating-element element-4"><i class="fas fa-magic"></i></div>
+                    <div class="floating-element element-5"><i class="fas fa-star"></i></div>
+                    <div class="floating-element element-6"><i class="fas fa-heart"></i></div>
+                </div>
+
+                <!-- Particles -->
+                <div class="hero-particles">
+                    <div class="particle particle-1"></div>
+                    <div class="particle particle-2"></div>
+                    <div class="particle particle-3"></div>
+                    <div class="particle particle-4"></div>
+                    <div class="particle particle-5"></div>
+                    <div class="particle particle-6"></div>
+                    <div class="particle particle-7"></div>
+                    <div class="particle particle-8"></div>
+                </div>
+
+                <!-- Shapes -->
+                <div class="hero-shapes">
+                    <div class="shape shape-circle"></div>
+                    <div class="shape shape-triangle"></div>
+                    <div class="shape shape-square"></div>
+                    <div class="shape shape-diamond"></div>
+                </div>
+
+            </div>
+            <!-- YOUR HERO SECTION END -->
 
         </div>
-        
-        <!-- Floating Elements -->
-        <div class="hero-floating-elements">
-            <div class="floating-element element-1">
-                <i class="fas fa-video"></i>
-            </div>
-            <div class="floating-element element-2">
-                <i class="fas fa-camera"></i>
-            </div>
-            <div class="floating-element element-3">
-                <i class="fas fa-film"></i>
-            </div>
-            <div class="floating-element element-4">
-                <i class="fas fa-magic"></i>
-            </div>
-            <div class="floating-element element-5">
-                <i class="fas fa-star"></i>
-            </div>
-            <div class="floating-element element-6">
-                <i class="fas fa-heart"></i>
-            </div>
+
+        <!-- Slider Dots -->
+        <div class="hero-slider-nav">
+            <span class="hero-dot active" onclick="goToHeroSlide(0)"></span>
+            <span class="hero-dot" onclick="goToHeroSlide(1)"></span>
         </div>
-        
-        <!-- Animated Particles -->
-        <div class="hero-particles">
-            <div class="particle particle-1"></div>
-            <div class="particle particle-2"></div>
-            <div class="particle particle-3"></div>
-            <div class="particle particle-4"></div>
-            <div class="particle particle-5"></div>
-            <div class="particle particle-6"></div>
-            <div class="particle particle-7"></div>
-            <div class="particle particle-8"></div>
-        </div>
-        
-        <!-- Geometric Shapes -->
-        <div class="hero-shapes">
-            <div class="shape shape-circle"></div>
-            <div class="shape shape-triangle"></div>
-            <div class="shape shape-square"></div>
-            <div class="shape shape-diamond"></div>
-        </div>
+
     </section>
+    <script>
+        let heroCurrent = 0;
+        const heroSlides = document.querySelectorAll(".hero-slide");
+        const heroDots = document.querySelectorAll(".hero-dot");
+
+        function showHeroSlide(index) {
+            heroSlides.forEach((slide, i) => {
+                slide.classList.toggle("active", i === index);
+                heroDots[i].classList.toggle("active", i === index);
+            });
+            heroCurrent = index;
+        }
+
+        function nextHeroSlide() {
+            let next = (heroCurrent + 1) % heroSlides.length;
+            showHeroSlide(next);
+        }
+
+        function goToHeroSlide(index) {
+            showHeroSlide(index);
+        }
+
+        // Auto switch every 6 seconds
+        setInterval(nextHeroSlide, 6000);
+    </script>
+
 
     <!-- Portfolio Section -->
     <section class="portfolio-section" id="portfolio">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Our Portfolio</h2>
-                <p class="section-subtitle">A showcase of our most compelling visual stories, each crafted with passion and precision.</p>
+                <p class="section-subtitle">A showcase of our most compelling visual stories, each crafted with passion
+                    and precision.</p>
             </div>
-            
+
             <div class="portfolio-grid">
                 <div class="portfolio-item" data-category="animation">
                     <div class="portfolio-image">
@@ -122,7 +163,8 @@
                         <div class="portfolio-overlay">
                             <h3 class="portfolio-title">A Phone Call</h3>
                             <div class="portfolio-actions">
-                                <button class="watch-btn" onclick="window.open('https://youtu.be/QWUQEKf1D6Y', '_blank')">
+                                <button class="watch-btn"
+                                    onclick="window.open('https://youtu.be/QWUQEKf1D6Y', '_blank')">
                                     <i class="fas fa-play"></i>
                                     Watch
                                 </button>
@@ -137,7 +179,8 @@
                         <div class="portfolio-overlay">
                             <h3 class="portfolio-title">Bachpan Ke Saathi</h3>
                             <div class="portfolio-actions">
-                                <button class="watch-btn" onclick="window.open('https://youtu.be/BEZjScAj9co', '_blank')">
+                                <button class="watch-btn"
+                                    onclick="window.open('https://youtu.be/BEZjScAj9co', '_blank')">
                                     <i class="fas fa-play"></i>
                                     Watch
                                 </button>
@@ -152,7 +195,8 @@
                         <div class="portfolio-overlay">
                             <h3 class="portfolio-title">Kumar Jweller Commercial</h3>
                             <div class="portfolio-actions">
-                                <button class="watch-btn" onclick="window.open('https://youtu.be/Mv0vymGS8Dk', '_blank')">
+                                <button class="watch-btn"
+                                    onclick="window.open('https://youtu.be/Mv0vymGS8Dk', '_blank')">
                                     <i class="fas fa-play"></i>
                                     Watch
                                 </button>
@@ -167,7 +211,8 @@
                         <div class="portfolio-overlay">
                             <h3 class="portfolio-title">Demo Ad - Shoe Company</h3>
                             <div class="portfolio-actions">
-                                <button class="watch-btn" onclick="window.open('https://youtu.be/Mv0vymGS8Dk', '_blank')">
+                                <button class="watch-btn"
+                                    onclick="window.open('https://youtu.be/Mv0vymGS8Dk', '_blank')">
                                     <i class="fas fa-play"></i>
                                     Watch
                                 </button>
@@ -182,7 +227,8 @@
                         <div class="portfolio-overlay">
                             <h3 class="portfolio-title">EOF MEDIA AD-FILM</h3>
                             <div class="portfolio-actions">
-                                <button class="watch-btn" onclick="window.open('https://www.youtube.com/watch?v=baj_zmTc2Bo', '_blank')">
+                                <button class="watch-btn"
+                                    onclick="window.open('https://www.youtube.com/watch?v=baj_zmTc2Bo', '_blank')">
                                     <i class="fas fa-play"></i>
                                     Watch
                                 </button>
@@ -197,7 +243,8 @@
                         <div class="portfolio-overlay">
                             <h3 class="portfolio-title">Bazuki 360 Diffuser Relaxation Commercial</h3>
                             <div class="portfolio-actions">
-                                <button class="watch-btn" onclick="window.open('https://www.youtube.com/watch?v=iZsCDispZS4', '_blank')">
+                                <button class="watch-btn"
+                                    onclick="window.open('https://www.youtube.com/watch?v=iZsCDispZS4', '_blank')">
                                     <i class="fas fa-play"></i>
                                     Watch
                                 </button>
@@ -215,20 +262,22 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Our Services</h2>
-                <p class="section-subtitle">Comprehensive filmmaking services tailored to bring your vision to life with professional excellence.</p>
+                <p class="section-subtitle">Comprehensive filmmaking services tailored to bring your vision to life with
+                    professional excellence.</p>
             </div>
-            
+
             <div class="services-subtitle">
                 <h3>What We Create</h3>
             </div>
-            
+
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-icon">
                         <i class="fas fa-video"></i>
                     </div>
                     <h3 class="service-title">Film Production</h3>
-                    <p class="service-desc">Full-scale film production from concept development to final delivery. We handle everything from pre-production planning to post-production finishing.</p>
+                    <p class="service-desc">Full-scale film production from concept development to final delivery. We
+                        handle everything from pre-production planning to post-production finishing.</p>
                     <div class="service-features">
                         <span class="feature">Script Development</span>
                         <span class="feature">Cinematography</span>
@@ -241,7 +290,8 @@
                         <i class="fas fa-bullhorn"></i>
                     </div>
                     <h3 class="service-title">Commercial Production</h3>
-                    <p class="service-desc">Create compelling commercials that drive results. From brand films to product showcases, we craft messages that resonate with your target audience.</p>
+                    <p class="service-desc">Create compelling commercials that drive results. From brand films to
+                        product showcases, we craft messages that resonate with your target audience.</p>
                     <div class="service-features">
                         <span class="feature">Brand Strategy</span>
                         <span class="feature">Creative Direction</span>
@@ -254,7 +304,8 @@
                         <i class="fas fa-cut"></i>
                     </div>
                     <h3 class="service-title">Post-Production</h3>
-                    <p class="service-desc">Professional editing, color grading, sound design, and visual effects. We bring your footage to life with meticulous attention to detail.</p>
+                    <p class="service-desc">Professional editing, color grading, sound design, and visual effects. We
+                        bring your footage to life with meticulous attention to detail.</p>
                     <div class="service-features">
                         <span class="feature">Color Grading</span>
                         <span class="feature">Editing</span>
@@ -267,7 +318,8 @@
                         <i class="fas fa-music"></i>
                     </div>
                     <h3 class="service-title">Music Videos</h3>
-                    <p class="service-desc">Innovative music videos that capture the essence of your sound. We combine creative storytelling with cutting-edge visual techniques.</p>
+                    <p class="service-desc">Innovative music videos that capture the essence of your sound. We combine
+                        creative storytelling with cutting-edge visual techniques.</p>
                     <div class="service-features">
                         <span class="feature">Creative Concepts</span>
                         <span class="feature">Performance</span>
@@ -277,101 +329,119 @@
             </div>
         </div>
     </section>
-<style>
-/* Hide mobile image on desktop */
-.mobile-founder-img {
-    display: none;
-}
+    <style>
+        /* Hide mobile image on desktop */
+        .mobile-founder-img {
+            display: none;
+        }
 
-/* Desktop side image visible by default */
-.desktop-founder-img {
-    display: block;
-}
+        /* Desktop side image visible by default */
+        .desktop-founder-img {
+            display: block;
+        }
 
-/* Mobile view */
-@media screen and (max-width: 768px) {
-    .mobile-founder-img {
-        display: block;
-        margin: 1rem auto;
-        width: 70%; /* control width */
-        max-width: 250px; /* optional max size */
-        height: auto; /* keep original aspect ratio */
-    }
+        /* Mobile view */
+        @media screen and (max-width: 768px) {
+            .mobile-founder-img {
+                display: block;
+                margin: 1rem auto;
+                width: 70%;
+                /* control width */
+                max-width: 250px;
+                /* optional max size */
+                height: auto;
+                /* keep original aspect ratio */
+            }
 
-    .mobile-founder-img img {
-        width: 100%;
-        height: auto; /* maintain aspect ratio */
-        border-radius: 10px;
-        object-fit: cover; /* fill container properly without distortion */
-    }
+            .mobile-founder-img img {
+                width: 100%;
+                height: auto;
+                /* maintain aspect ratio */
+                border-radius: 10px;
+                object-fit: cover;
+                /* fill container properly without distortion */
+            }
 
-    /* Hide desktop side image */
-    .desktop-founder-img {
-        display: none;
-    }
+            /* Hide desktop side image */
+            .desktop-founder-img {
+                display: none;
+            }
 
-    /* Stack description content vertically */
-    .about-content {
-        display: flex;
-        flex-direction: column;
-    }
+            /* Stack description content vertically */
+            .about-content {
+                display: flex;
+                flex-direction: column;
+            }
 
-    .about-description {
-        order: 1;
-    }
+            .about-description {
+                order: 1;
+            }
 
-    .about-right {
-        order: 2;
-    }
-}
-
-
-</style>
+            .about-right {
+                order: 2;
+            }
+        }
+    </style>
     <!-- About Section -->
     <section class="about-section" id="about">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">About Evenly Odd Films</h2>
-                <p class="section-subtitle">Passionate filmmakers dedicated to creating authentic, impactful visual stories that connect with audiences.</p>
+                <p class="section-subtitle">Passionate filmmakers dedicated to creating authentic, impactful visual
+                    stories that connect with audiences.</p>
             </div>
-            
+
             <div class="about-content">
                 <div class="about-description">
-                    <p><strong>Evenly Odd Films</strong> is a film production house based in Ahmedabad which was launched in June 2023. The meaning behind the name 'Evenly Odd Films' is; Crafting something simple stories but with a unique touch which will <span class="highlight-text">CREATE THE DIFFERENCE</span>. The name suggests that we create unique films which have stunning visuals and emotional storylines that leave a lasting impression.</p>
-                    
-                    <p>We believe in taking challenges and risks with our films because that gives the best results and a new cinema is born. The best work comes from passion and collaboration and our team consists of passionate people who believes in creating a cinematic experience film.</p>
-                    
-<h3 style="color: #ff5400; font-size: 1.5rem; margin: 2rem 0 1rem 0; font-weight: 700;">
-    About the Founder:
-</h3>
+                    <p><strong>Evenly Odd Films</strong> is a film production house based in Ahmedabad which was
+                        launched in June 2023. The meaning behind the name 'Evenly Odd Films' is; Crafting something
+                        simple stories but with a unique touch which will <span class="highlight-text">CREATE THE
+                            DIFFERENCE</span>. The name suggests that we create unique films which have stunning visuals
+                        and emotional storylines that leave a lasting impression.</p>
 
-<!-- Mobile-only inline founder image -->
-<div class="about-image founder-image-container mobile-founder-img">
-    <img src="Logo/p11.png" alt="Hardik Soni - Founder of Evenly Odd Films" class="person-image founder-image">
-</div>
+                    <p>We believe in taking challenges and risks with our films because that gives the best results and
+                        a new cinema is born. The best work comes from passion and collaboration and our team consists
+                        of passionate people who believes in creating a cinematic experience film.</p>
+
+                    <h3 style="color: #ff5400; font-size: 1.5rem; margin: 2rem 0 1rem 0; font-weight: 700;">
+                        About the Founder:
+                    </h3>
+
+                    <!-- Mobile-only inline founder image -->
+                    <div class="about-image founder-image-container mobile-founder-img">
+                        <img src="Logo/p11.png" alt="Hardik Soni - Founder of Evenly Odd Films"
+                            class="person-image founder-image">
+                    </div>
 
 
 
-    <p>Hardik Soni, founder of Evenly Odd Films, is a young passionate filmmaker who believes in creating unique set of films which will contribute to the society. He is a Director, Actor, Editor, Writer, and Producer. He has 5+ years of experience in editing, 3+ years of experience in acting, 2+ years of experience in film direction, and 1+ Years of experience in writing.</p>
+                    <p>Hardik Soni, founder of Evenly Odd Films, is a young passionate filmmaker who believes in
+                        creating unique set of films which will contribute to the society. He is a Director, Actor,
+                        Editor, Writer, and Producer. He has 5+ years of experience in editing, 3+ years of experience
+                        in acting, 2+ years of experience in film direction, and 1+ Years of experience in writing.</p>
 
 
 
-                    
-                    <p>He is also working with the KYA HAAL CHAAL BY APOORV JHA podcast. He has started in directorial journey with the foundation of Evenly Odd Films.</p>
-                    
+
+                    <p>He is also working with the KYA HAAL CHAAL BY APOORV JHA podcast. He has started in directorial
+                        journey with the foundation of Evenly Odd Films.</p>
+
                     <p>He is going to release his debut feature film in next year.</p>
                 </div>
-                
-               <!-- Desktop-only right-side image -->
-<div class="about-right">
-    <div class="about-image founder-image-container desktop-founder-img">
-        <img src="Logo/p11.png" alt="Hardik Soni - Founder of Evenly Odd Films" class="person-image founder-image">
-    </div>
-</div>  </div>
-            
+
+                <!-- Desktop-only right-side image -->
+                <div class="about-right">
+                    <div class="about-image founder-image-container desktop-founder-img">
+                        <img src="Logo/p11.png" alt="Hardik Soni - Founder of Evenly Odd Films"
+                            class="person-image founder-image">
+                    </div>
+                </div>
+            </div>
+
             <div class="about-video">
                 <div class="video-container">
-                    <video controls poster="Logo/thumbnail.png" style="width: 100%; height: 400px; object-fit: cover; border-radius: 20px;">
+                    <video controls poster="Logo/thumbnail.png"
+                        style="width: 100%; height: 400px; object-fit: cover; border-radius: 20px;">
                         <source src="Logo/Fiverr Introduction_commpf.mp4" type="video/mp4">
                         <source src="Logo/Fiverr Introduction_commpf.mp4" type="video/quicktime">
                         Your browser does not support the video tag.
@@ -388,7 +458,7 @@
                     </video>
                 </div>
             </div>
-            
+
             <div class="mission-section">
                 <div class="mission-container">
                     <div class="mission-visual">
@@ -409,7 +479,11 @@
                             <h3 class="mission-title">Our Mission</h3>
                         </div>
                         <div class="mission-text">
-                            <p>To create compelling visual narratives that not only <span class="highlight-word">entertain</span> but also inspire meaningful connections between stories and audiences. We believe in the power of film to <span class="highlight-word">transform perspectives</span>, evoke emotions, and create lasting impact.</p>
+                            <p>To create compelling visual narratives that not only <span
+                                    class="highlight-word">entertain</span> but also inspire meaningful connections
+                                between stories and audiences. We believe in the power of film to <span
+                                    class="highlight-word">transform perspectives</span>, evoke emotions, and create
+                                lasting impact.</p>
                         </div>
                         <div class="mission-values">
                             <div class="value-item">
@@ -436,42 +510,46 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Let's Create Together</h2>
-                <p class="section-subtitle">Ready to bring your vision to life? Get in touch and let's discuss your next project.</p>
+                <p class="section-subtitle">Ready to bring your vision to life? Get in touch and let's discuss your next
+                    project.</p>
             </div>
-            
+
             <div class="contact-content">
-                <form class="contact-form" id="contactForm" action="https://formspree.io/f/meorqwgy" method="POST" autocomplete="off">
+                <form class="contact-form" id="contactForm" action="https://formspree.io/f/meorqwgy" method="POST"
+                    autocomplete="off">
                     <div class="form-group">
                         <label for="name">Full Name</label>
                         <input type="text" id="name" name="name" required>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="email">Email Address</label>
                         <input type="email" id="email" name="email" required>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="enquiry">Enquiry Type</label>
-                        <input type="text" id="enquiry" name="enquiry" placeholder="e.g., Film Production, Music Videos, Post Production..." required>
+                        <input type="text" id="enquiry" name="enquiry"
+                            placeholder="e.g., Film Production, Music Videos, Post Production..." required>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="message">Project Details</label>
-                        <textarea id="message" name="message" placeholder="Tell us about your project, timeline, and vision..." required></textarea>
+                        <textarea id="message" name="message"
+                            placeholder="Tell us about your project, timeline, and vision..." required></textarea>
                     </div>
-                    
+
                     <!-- Hidden field to specify your email -->
                     <input type="hidden" name="_replyto" value="contact@evenlyoddfilms.com">
                     <input type="hidden" name="_subject" value="New Enquiry from Evenly Odd Films Website">
                     <input type="hidden" name="_next" value="http://localhost:8000/#contact">
-                    
+
                     <button type="submit" class="btn-submit" id="submitBtn">
                         <i class="fas fa-paper-plane submit-icon"></i>
                         <span>Send Message</span>
                     </button>
                 </form>
-                
+
                 <!-- Success/Error Messages -->
                 <div id="formMessage" class="form-message" style="display: none;">
                     <div class="success-message">
@@ -480,7 +558,7 @@
                         <p>Thank you for reaching out. We'll get back to you within 24 hours.</p>
                     </div>
                 </div>
-                
+
                 <div class="contact-info">
                     <div class="contact-card">
                         <div class="contact-icon">
@@ -490,7 +568,7 @@
                         <p>contact@evenlyoddfilms.com</p>
                         <span>Get in touch for project inquiries</span>
                     </div>
-                    
+
                     <div class="contact-card">
                         <div class="contact-icon">
                             <i class="fas fa-phone"></i>
@@ -498,7 +576,7 @@
                         <h3>Phone</h3>
                         <p>+91 8799357652</p>
                     </div>
-                    
+
                     <div class="contact-card">
                         <div class="contact-icon">
                             <i class="fas fa-map-marker-alt"></i>
@@ -506,11 +584,12 @@
                         <h3>Studio</h3>
                         <p>Shop no F-31, Flora Iris, near Kavisha Panorama, Ghuma, Ahmedabad, 380058</p>
                     </div>
-                    
+
                     <div class="ready-section">
                         <h3>Ready to Start?</h3>
-                        <p>Let's discuss your project and explore how we can bring your vision to life with our expertise and creative approach.</p>
-                        
+                        <p>Let's discuss your project and explore how we can bring your vision to life with our
+                            expertise and creative approach.</p>
+
                         <ul class="benefits-list">
                             <li><i class="fas fa-check"></i> Free initial consultation</li>
                             <li><i class="fas fa-check"></i> Custom project proposals</li>
@@ -532,15 +611,19 @@
                         <img src="Logo/eof3.png" alt="Evenly Odd Films" class="logo-img">
                         <span class="logo-text">Evenly Odd Films</span>
                     </div>
-                    <p>Creating compelling visual narratives that resonate with audiences and leave lasting impressions. Stories that feel. Frames that stay.</p>
-                    
+                    <p>Creating compelling visual narratives that resonate with audiences and leave lasting impressions.
+                        Stories that feel. Frames that stay.</p>
+
                     <div class="social-links">
-                        <a href="https://www.instagram.com/evenly_odd_films/" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.youtube.com/@EvenlyOddFilms" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fab fa-youtube"></i></a>
-                        <a href="https://www.linkedin.com/company/evenlyoddfilms/" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/evenly_odd_films/" target="_blank" rel="noopener noreferrer"
+                            class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@EvenlyOddFilms" target="_blank" rel="noopener noreferrer"
+                            class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.linkedin.com/company/evenlyoddfilms/" target="_blank"
+                            rel="noopener noreferrer" class="social-link"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
-                
+
                 <div class="footer-column">
                     <h4>Services</h4>
                     <ul>
@@ -550,7 +633,7 @@
                         <li><a href="#services">Music Videos</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-column">
                     <h4>Company</h4>
                     <ul>
@@ -560,7 +643,7 @@
                         <li><a href="#">Careers</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-column">
                     <h4>Contact</h4>
                     <ul>
@@ -571,7 +654,7 @@
                     </ul>
                 </div>
             </div>
-            
+
             <div class="footer-bottom">
                 <div class="footer-left">
                     <p>&copy; 2025 Evenly Odd Films. All rights reserved.</p>
@@ -592,4 +675,5 @@
     <!-- JavaScript -->
     <script src="script.js"></script>
 </body>
+
 </html>
