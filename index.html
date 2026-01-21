@@ -57,12 +57,14 @@
 
     <section class="hero-slider" id="home">
 <style>
+/* ================= HERO SLIDER ================= */
+
 .hero-slider {
   position: relative;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background: #000;
+  background: #000; /* black bars like Netflix if needed */
 }
 
 /* Each slide */
@@ -77,8 +79,9 @@
 
 .hero-slide.active {
   opacity: 1;
-  z-index: 5;
+  z-index: 10;
 }
+
 
 /* Common poster style */
 .hero-poster {
